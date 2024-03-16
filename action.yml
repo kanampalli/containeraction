@@ -1,17 +1,14 @@
-name: 'My First Container Action'
-decsription 'Container Action'
+name: 'my first container action'
+description: 'Learning Platform'
 author: 'Himaja'
 inputs:
   myInput:
-    description: 'Greeting to use this'
+    description: 'greeting to use'
     required: true
-    default: 'Awesome Himaja'
+    default: 'Awesome Guru'
 outputs:
-  myOutput: 
-    description: 'total Memory'
+  myOutput:
+    description: 'total memory'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  
-    
-  
