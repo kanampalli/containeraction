@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: runt the action
+      id: hello
+      uses: ./
+      with:
+        myInput: 'Himaja Kanampalli'
+    - name: output
+      run: |
+        echo ${{ stesp.hello.outputs.memory }}
+        echo "total memory successfully output"
+          
