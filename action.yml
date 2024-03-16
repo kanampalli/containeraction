@@ -1,0 +1,17 @@
+name: 'My First Container Action'
+decsription 'Container Action'
+author: 'Himaja'
+inputs:
+  myInput:
+    description: 'Greeting to use this'
+    required: true
+    default: 'Awesome Himaja'
+outputs:
+  myOutput: 
+    description: 'total Memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  
+    
+  
